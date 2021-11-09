@@ -1,0 +1,40 @@
+.header {
+        background-image: url(/build/img/imagen.jpg);
+        height: 40rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 4rem;
+    
+}
+
+
+.barra {
+    display: inline-block;
+   
+    @include tablet {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+   
+}
+
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+        color: $grisOscuro;
+        font-size: 2rem;
+        font-weight: bold;
+        &:hover {
+            color: $rosa;
+        }
+    }
+}

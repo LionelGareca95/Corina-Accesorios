@@ -1,0 +1,35 @@
+.footer {
+    padding-top: 2rem;
+}
+    .barra-footer {
+        display: inline-block;
+
+        h1 {
+            color: $violetaClaro;
+        }
+    
+    
+        @include telefono {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+       
+    }
+    
+    .navegacion-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    
+        a {
+            color: $violetaClaro;
+            font-size: 2rem;
+            font-weight: bold;
+            &:hover {
+                color: $rosa;
+            }
+        }
+    }
+

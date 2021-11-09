@@ -1,0 +1,20 @@
+.contenedor-productos {
+
+    margin-top: 2rem;
+
+    @include telefono {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   img {
+       border-radius: 1rem;
+
+   }
+
+   
+}

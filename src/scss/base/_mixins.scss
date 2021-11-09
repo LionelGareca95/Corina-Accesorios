@@ -16,8 +16,15 @@
         @content;
     }
 }
-@mixin grid($columnas, $espaciado ) {
+@mixin grid {
     display: grid;
-    gap: $espaciado;
-    grid-template-columns: repeat($columnas, 1fr);
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    @content;
+}
+@mixin grid2 {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    @content;
 }
