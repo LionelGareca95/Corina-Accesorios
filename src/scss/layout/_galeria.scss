@@ -1,20 +1,16 @@
 .contenedor-productos {
 
     margin-top: 2rem;
+    margin-bottom: 2rem;
 
     @include telefono {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        @include grid
     }
+
     @include tablet {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        @include grid2 
     }
 
-   img {
-       border-radius: 1rem;
-
-   }
-
-   
+    
+  
 }

@@ -16,15 +16,15 @@
         @content;
     }
 }
+
 @mixin grid {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    @content;
 }
+
 @mixin grid2 {
     display: grid;
-    gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    @content;
+    gap: 2rem;
 }

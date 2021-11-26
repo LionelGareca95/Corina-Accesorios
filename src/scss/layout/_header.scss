@@ -4,33 +4,32 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        padding-top: 4rem;
+        padding-top: 1rem;
+
+        .barra {
+            align-items: center;
+        }
     
 }
 
 
-.barra {
-    display: inline-block;
-   
+.navegacion-principal {   
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+    
     @include tablet {
-        
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
+     
     }
     
-   
-}
-
-
-.navegacion-principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
 
     a {
-        color: $grisOscuro;
+        color: $negro;
         font-size: 2rem;
         font-weight: bold;
         &:hover {
@@ -38,3 +37,4 @@
         }
     }
 }
+

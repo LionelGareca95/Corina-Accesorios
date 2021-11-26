@@ -6,98 +6,115 @@
     <title>Corina Accesorios</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/42636d2070.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="build/css/app.css">
+    
+    
 </head>
 <body>
 
-<header class="header">
+<header class="header inicio">
 
-    <div class="contenedor">
+    <div class="contenedor contenido-header">
         <div class="barra">
-            <a href="index.html">
+            <a href="/">
                 <h1 class="titulo">Corina Accesorios</h1> 
             </a> 
 
-            <nav class="navegacion-principal">
-                <a href="Nosotros">Nosotros</a>
-                <a href="Productos">Galería</a>
-                <a href="Inicio">Inicio</a>
+            <div class="mobile-menu">
+                <img src="build/img/barras.webp" alt="icono menu responsive">
+            </div>
+           
+            <nav class="navegacion navegacion-principal">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="Productos.html">Productos</a>
+                <a href="Inicio.html">Inicio</a>
             </nav>
-        
         </div>
-      
-    </div>  
-
-    <!-- <div class="mobile-menu">
-        <img src="build/img/barras.svg" alt="icono menu responsive">
-    </div> -->
+     </div>  
 
 </header>
 <main>
     <div class="contenedor contenedor-productos">
         
         <div class="imagen-producto"> 
-            <h2>Scrunchies</h2>
+            <div class="contenedor-botones">
+                <button class="boton"><span>Scrunchies</span></button>
+            </div>
             <img src="build/img/e1.webp" alt="cartuchera 1 webp">
         </div>
         
-        <div class="imagen-producto">
-            <h2>Cartucheras</h2> 
+        <div class="imagen imagen-producto">
+            <div class="contenedor-botones">
+                <button class="boton"><span>Cartucheras</span></button>
+            </div>
             <img src="build/img/cartuchera 2.webp" alt="cartuchera 1 webp">
         </div>
-        <div class="imagen-producto">
-            <h2>Carteras</h2> 
+        <div class="imagen imagen-producto">
+            <div class="contenedor-botones">
+                <button class="boton"><span>Almohadones</span></button>
+            </div>
             <img src="build/img/cartuchera 3.webp" alt="cartuchera 1 webp">
         </div>
-        <div class="imagen-producto">
-            <h2>Almohadones</h2> 
+        <div class="imagen imagen-producto">
+            <div class="contenedor-botones">
+                <button class="boton"><span>Boton</span></button>
+            </div>
             <img src="build/img/cartuchera 1.webp" alt="cartuchera 1 webp">
         </div>
-        <div class="imagen-producto">
-            <h2>Cartucheras</h2> 
+        <div class="imagen imagen-producto">
+            <div class="contenedor-botones">
+                <button class="boton"><span>Boton</span></button>
+            </div>
             <img src="build/img/cartuchera 1.webp" alt="cartuchera 1 webp">
         </div>
-        <div class="imagen-producto">
-            <h2>Cartucheras</h2> 
+        <div class="imagen imagen-producto">
+            <div class="contenedor-botones">
+                <button class="boton"><span>Boton</span></button>
+            </div>
             <img src="build/img/cartuchera 1.webp" alt="cartuchera 1 webp">
         </div>
 
     </div>
-    
 
 </main>
 
-    
 
- 
-<div class="imagen-scrunchie">
-    <!-- <img src="/build/img/e1.jpg" alt="Imagen Scrunchie" loading="lazy"> -->
-</div>    
-<div class="imagen-scrunchie">
-    <!-- <img src="/build/img/e1.jpg" alt="Imagen Scrunchie" loading="lazy"> -->
-</div>
-
-
-
-<footer class="footer">
-    <div class="contenedor">
-        <div class="barra barra-footer">  
-            <a class="logo" href="index.html">
-                <h1 class="logo__nombre no-margin centrar-texto">Corina<span class="logo__bold"> Accesorios</span></h1>
-            </a>
-            <nav class="navegacion-footer">
-                <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-            </nav>
+<footer class="footer contenido-footer">
+    <h1 class="titulo">Corina Accesorios</h1> 
+    <div class="contenedor informacion-footer">
+            <div>
+                <nav class="navegacion-footer">
+                    <h2>Contacto</h2>
+                    <a href="Nosotros"><i class="fab fa-facebook-square"></i> Corina Accesorios</a>
+                    <a href="Productos"><i class="fab fa-instagram"></i> Corina Accesorios</a>
+                    <a href="Inicio"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                </nav>
+                
+            </div> 
+            <div class="pagos">
+                <h2>Medios de Pago</h2>
+                <div class="logos-pagos">
+                    <img class="logos imagen-pagos1" src="build/img/efectivo.svg" alt="efectivo">
+                    <p>Efectivo</p>
+                </div>
+                <div class="logos-pagos">
+                    <img class="logos imagen-pagos2" src="build/img/tarjeta.svg" alt="tarjeta">
+                    <p>Tarjeta</p>
+                </div>
+                <div class="logos-pagos"> 
+                    <img class=" logos imagen-pagos3" src="build/img/transferencia.svg" alt="transferencia">
+                    <p>Transferencia</p>
+                </div>
+                
+            </div>   
+            
+        
+            
+        
         </div>
-    </div>
+        <p class="copyright">&copy; Todos los Derechos Reservados Corina Accesorios 2021 </p>
 </footer>
-
-
-    
-   
 
     <script src="build/js/bundle.min.js"></script>
 </body>
