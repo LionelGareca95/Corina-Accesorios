@@ -1,6 +1,6 @@
 .header {
         background-image: url(/build/img/imagen.jpg);
-        height: 40rem;
+        height: 95rem;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -24,6 +24,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        gap: 2rem;
      
     }
     
