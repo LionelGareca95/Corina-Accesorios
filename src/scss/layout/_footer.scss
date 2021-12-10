@@ -1,5 +1,6 @@
 
 .navegacion-footer {
+
     display: grid;
     gap: 2rem;
     margin-top: 4rem 2rem;
@@ -18,10 +19,22 @@
    i.fa-whatsapp {
        color: #2ca93b;
    }
+   i.fa-dollar-sign {
+        color: #2ca93b;
+   }
+   i.fa-credit-card {
+       color: #CBCF45;
+   }
+   i.fa-wallet {
+       color: #873600;
+   }
+
+
+
    h2 {
     font-weight: normal;
     font-family: $fuente_principal;
-    text-align: center;
+    text-align: left;
 }
 }
 .informacion-footer {
@@ -45,44 +58,8 @@
        
     }
 }
-.pagos {
-    padding-left: 1.5rem;
 
-    .imagen-pagos1{
-        width: 3.5rem;
-    }
-    .imagen-pagos2  {
-        width: 5.5rem;
-    }
-    .imagen-pagos3 {
-        width: 5.5rem;
-    }
-
-    h2 {
-        font-weight: normal;
-        font-family: $fuente_principal;
-    }
    
-  
-}
-
-
-h2 {
-    margin-top: 1rem;
-}
-.logos-pagos {
-    display: flex;
-    text-align: center;
-    
-   
-    p {
-        padding: 1rem;
-        color: $rosa;
-        font-size: 2.5rem;
-        
-    }
-}
-
 
 .copyright {
     text-align: center;
@@ -107,5 +84,16 @@ h2 {
     height: 40px;
     display: block;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
 }
+
+p.subir {
+    padding: 0;
+    color: $azul;
+    font-size: 2rem;
+ }
+
+
+
