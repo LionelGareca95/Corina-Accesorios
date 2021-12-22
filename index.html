@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corina Accesorios</title>
-    <!-- Fuentes de-->
+    <!-- Fuentes de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/42636d2070.js" crossorigin="anonymous"></script>
-    <script src="/src/js/scrollreveal.js"></script>
+    <!-- Hoja de Estilo compilada con SASS-->
     <link rel="stylesheet" href="build/css/app.css">
+    <!--Font Awesome Iconos -->
+    <script src="https://kit.fontawesome.com/42636d2070.js" crossorigin="anonymous"></script>
+    <!-- Elevator.Js -->
+    <script src="/src/js/scrollreveal.js"></script>
+    <!-- Libreria Ajax Zoom-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
     
 </head>
 <body>
@@ -32,10 +38,61 @@
                 <a href="index.html">Inicio</a>
             </nav>
         </div>
+        <section id="container-slider">	
+            <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+            <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+            <ul class="listslider">
+              <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+              <li><a itlist="itList_1" href="#"></a></li>
+              <li><a itlist="itList_2" href="#"></a></li>
+            </ul>
+            <ul id="slider">
+              <li style="background-image: url('/build/img/cartuchera10.webp'); z-index:0; opacity: 1;">
+                <div class="content_slider" >
+                  <div>
+                    <h2>Cartucheras</h2>
+                <p></p>
+                <a href="productos.html" target="_blank" class="btnSlider">Ver Más</a>
+              </div>
+                </div>
+              </li>
+              <li style="background-image: url('/build/img/e5.webp'); ">
+                <div class="content_slider" >
+                  <div>
+                    <h2>Scrunchies</h2>
+                <p></p>
+                <a href="productos.html" target="_blank" class="btnSlider">Ver Más</a>
+              </div>
+                </div>
+              </li>
+              <li style="background-image: url('/build/img/e5.webp')">
+                <div class="content_slider" >
+                  <div>
+                    <h2>Imagen 3</h2>
+                <p></p>
+                <a href="productos.html" target="_blank" class="btnSlider">Ver Más</a>
+              </div>
+                </div>
+              </li>
+           </ul>
+         </section>
+         
      </div>  
+
+    
+     
 
 </header>
 <main>
+    <script>
+        $(document).ready(function(){
+            $('.zoom').hover(function() {
+                $(this).addClass('transition');
+            }, function() {
+                $(this).removeClass('transition');
+            });
+        });
+        </script>
     <div class="contenedor contenedor-productos scroll-productos">
         
         <div> 
@@ -43,7 +100,7 @@
                 <button class="boton"><span>Scrunchies</span></button>
             </div>
             <div class="imagen-producto">
-                <img src="build/img/e1.webp" alt="cartuchera 1 webp">
+                <img class="zoom transition" src="build/img/e1.webp" alt="cartuchera 1 webp">
             </div>
             
         </div>
@@ -52,37 +109,36 @@
             <div class="contenedor-botones">
                 <button class="boton"><span>Cartucheras</span></button>
             </div>
-            <img src="build/img/cartuchera 2.webp" alt="cartuchera 1 webp">
+            <img class="zoom transition" src="build/img/cartuchera 2.webp" alt="cartuchera 1 webp">
         </div>
         <div class="imagen imagen-producto">
             <div class="contenedor-botones">
                 <button class="boton"><span>Almohadones</span></button>
             </div>
-            <img src="build/img/cartuchera 3.webp" alt="cartuchera 1 webp">
+            <img class="zoom transition" src="build/img/cartuchera 3.webp" alt="cartuchera 1 webp">
         </div>
         <div class="imagen imagen-producto">
             <div class="contenedor-botones">
                 <button class="boton"><span>Boton</span></button>
             </div>
-            <img src="build/img/cartuchera 1.webp" alt="cartuchera 1 webp">
+            <img class="zoom transition" src="build/img/cartuchera 1.webp" alt="cartuchera 1 webp">
         </div>
         <div class="imagen imagen-producto">
             <div class="contenedor-botones">
                 <button class="boton"><span>Boton</span></button>
             </div>
-            <img src="build/img/cartuchera 1.webp" alt="cartuchera 1 webp">
+            <img class="zoom transition" src="build/img/cartuchera 1.webp" alt="cartuchera 1 webp">
         </div>
         <div class="imagen imagen-producto">
             <div class="contenedor-botones">
                 <button class="boton"><span>Boton</span></button>
             </div>
-            <img src="build/img/cartuchera 1.webp" alt="cartuchera 1 webp">
+            <img class="zoom transition" src="build/img/cartuchera 1.webp" alt="cartuchera 1 webp">
         </div>
 
     </div>
 
 </main>
-
 
 <footer class="footer contenido-footer">
     <h1 class="titulo">Corina Accesorios</h1> 
@@ -90,9 +146,9 @@
             <div>
                 <nav class="navegacion-footer">
                     <h2>Contacto</h2>
-                    <a href="https://www.facebook.com/corinaaccesorios1-102468315379556"><i class="fab fa-facebook-square"></i> Corina Accesorios</a>
-                    <a href="https://www.instagram.com/scrunchies_rosario97/?hl=es-la"><i class="fab fa-instagram"></i> Corina Accesorios</a>
-                    <a href="https://api.whatsapp.com/send?phone=+5493417123272&text=Hola Somos Corina Accesorios, ¿En que podemos ayudarte?"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                    <a class="enlace" href="https://www.facebook.com/corinaaccesorios1-102468315379556"><i class="fab fa-facebook-square"></i> Corina Accesorios</a>
+                    <a class="enlace" href="https://www.instagram.com/scrunchies_rosario97/?hl=es-la"><i class="fab fa-instagram"></i> Corina Accesorios</a>
+                    <a class="enlace" href="https://api.whatsapp.com/send?phone=+5493417123272&text=Hola Somos Corina Accesorios, ¿En que podemos ayudarte?"><i class="fab fa-whatsapp"></i> Whatsapp</a>
                 </nav>
                 
             </div> 
@@ -122,6 +178,5 @@
 
 <script src="/src/js/elevator.js"></script>
 <script src="build/js/bundle.min.js"></script>
-
 </body>
 </html>

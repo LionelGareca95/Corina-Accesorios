@@ -29,13 +29,17 @@
        color: #873600;
    }
 
-
-
    h2 {
     font-weight: normal;
     font-family: $fuente_principal;
     text-align: left;
+    
 }
+}
+.navegacion-footer {
+    a.enlace:hover {
+        color: $blanco;
+    }
 }
 .informacion-footer {
 

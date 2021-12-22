@@ -12,6 +12,53 @@
     
 }
 
+.header-productos {
+    background-image: url(/build/img/imagen.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 1rem;
+    
+
+    .barra {
+        align-items: center;
+    }
+   
+}
+
+.header-nosotros {
+    background-image: url(/build/img/imagen.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 1rem;
+    
+
+    .barra {
+        align-items: center;
+    }
+}
+@include telefono {
+
+    .mapa-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+    .mapa-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
 
 .navegacion-principal {   
     display: flex;
