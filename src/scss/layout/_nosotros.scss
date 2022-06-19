@@ -1,0 +1,79 @@
+.mapa-container{
+
+    margin-top: 8rem;
+
+    @include telefono {
+        width: 50rem;
+        height: 50rem;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+    
+    
+}
+
+.ubicacion{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.navegacion-redes {
+
+   
+    margin-top: 2rem;
+
+    a {
+        font-size: 2.5rem;
+        color: $negro;
+        margin: 1.5rem;
+        font-weight: bold;
+        
+    }
+    i.fa-facebook-square{
+        color: $azul;
+    }
+   i.fa-instagram {
+       color: #F56040;
+   }
+   i.fa-whatsapp {
+       color: #2ca93b;
+   }
+   i.fa-dollar-sign {
+        color: #2ca93b;
+   }
+   i.fa-credit-card {
+       color: #CBCF45;
+   }
+   i.fa-wallet {
+       color: #873600;
+   }
+
+   h2 {
+    margin-top: 2rem;
+    font-weight: normal;
+    font-family: $fuente_principal;
+    text-align: center;
+    
+    
+}
+}
+.navegacion-redes {
+    text-align: center;
+    a.enlace:hover {
+        color: $blanco;
+    }
+}
+
+.redes-nosotros{
+    
+    display: block;
+    @include tablet {
+
+    }
+}
+
+
+

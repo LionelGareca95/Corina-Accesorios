@@ -11,3 +11,5 @@ window.sr = ScrollReveal();
         origin: 'left',
         distance: '400px'
     });
+
+    ScrollReveal().reveal('.header');
